@@ -79,7 +79,9 @@ function render() {
     changeBut.className = "btn btn-success";
     cell4.appendChild(changeBut);
     let readStatus = "";
-    if (myLibrary[i].check == true) {
+    if (myLibrary[i].check == true) { 
+    //There are two methods to solving this bug, you could either A: Do what I did and change `false` to `true` 
+    // or B: Swapping out the Yes or No while it still checks for `false`.
       readStatus = "Yes";
     } else {
       readStatus = "No";
